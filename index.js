@@ -4,7 +4,10 @@ const PORT = 4001;
 const ApiRoute = require("./Routes/ApiRoute")
 let cors=require("cors")
 
-app.use(cors())
+app.use(cors(
+    {
+        origin: "*"
+        ))
 
 app.use("/",ApiRoute)
 
