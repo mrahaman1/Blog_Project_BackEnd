@@ -437,4 +437,4 @@ const get =(req,res)=>{
         }
     ])
 }
-module.exports = get;
+module.exports.apiController = get;
